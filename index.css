@@ -25,22 +25,32 @@ p {
     margin: 0;
 }
 
+header {
+    background-color: rgb(5, 38, 58);
+    position: fixed;
+    width: 100%;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 70px;
-    background-color: rgb(5, 38, 58);
+    padding: 10px 70px;
 }
 
-nav a {
+.nav-wrap {
+    display: flex;
+}
+
+.nav-wrap li {
     margin: 0 10px;
     font-size: 20px;
     color: white;
+    cursor: pointer;
 }
 
 main {
-    padding:  40px;
+    padding:  100px 40px 40px;
     max-width: 920px;
     margin: 0 auto;
 }
@@ -64,6 +74,10 @@ main {
 }
 
 /* Projects */
+#projects {
+    margin-top: 80px
+}
+
 .t1 {
     height: 100%;
     width: 100%;
