@@ -1,0 +1,92 @@
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+    color: white;
+}
+
+h2 {
+    margin: 0 0 20px;
+    font-size: 26px;
+}
+
+p {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+    background-color: rgb(5, 38, 58);
+}
+
+nav a {
+    margin: 0 10px;
+    font-size: 20px;
+    color: white;
+}
+
+main {
+    padding:  40px;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.about {
+    margin-bottom: 80px;
+    text-align: left;
+}
+
+.about > p {
+    margin-bottom: 40px;
+    font-size: 22px;
+}
+
+.about a {
+    background-color: rgb(15, 74, 113);
+    color: white;
+    font-size: 22px;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+/* Projects */
+.t1 {
+    height: 100%;
+    width: 100%;
+}
+
+.t2 {
+    height: 550px;
+    width: 605px;
+}
+
+.icon {
+    height: 45px;
+    width: 45px;
+}
+
+.projects p {
+    font-size: 18px;
+}
+
+.text {
+    text-align: left;
+}
+
+.p1 {
+    margin-bottom: 40px;
+}

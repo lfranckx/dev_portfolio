@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Lachlan's Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class='wrapper'>
+            <header></header>
+            <section>
+                <div class='nav'>
+                    <div class="nav-wrap">
+                        <ul class="nav-list">
+                            <li><button id="about-link" class="nav-link" href="">Lachlan Franckx</button></li>
+                            <li><button id="proj-link" class="nav-link" href="">Portfolio</button></li>
+                            <li><button id="cont-link" class="nav-link" href="">Contact</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-content align-center">
+                    <div class="content-wrap">
+                        <div id="about" class="about flex-col"
+                            style="display: none;" >
+                            <p>I am a full-stack React and Node.js developer.  I am a 
+                                passionate creative type with a background in music and music 
+                                technology.  I take pride in overcoming challenges and having the 
+                                self-discipline to learn something entirely new and difficult. 
+                                Outside of coding I love being outdoors, surfing, climbing, and 
+                                visiting new places. I am seeking the opportunity to be around 
+                                experienced developers in order to grow myself and be a part of a 
+                                product I fully believe in.  Feel free to contact me or browse some 
+                                of my projects.</p>
+                        </div>
+                        <div id="contact" class="contact"style="display: none;" ></div>
+                        <div id="projects-wrap" class="projects-wrap"
+                            style="display: none;" >
+                            <div class="projects">
+                                <div class="p1 project">
+                                    <div class="card">
+                                        <img class="thumb"
+                                        alt="Screen Shot 2020-05-18 at 7 46 34 PM" 
+                                        src="https://user-images.githubusercontent.com/52330544/82279158-b44b1e80-9940-11ea-83ad-906e8610c78c.png">
+                                        <div>
+                                            <img class="icon" src="images/react.png" alt="react">
+                                            <img class="icon" src="images/nodejsbig.png" alt="nodejs">
+                                            <img class="icon" src="images/awss3.png" alt="awss3">
+                                            <img class="icon" src="images/psql.png" alt="psql">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p2 project">
+                                    <div class="card">
+                                        <img class="thumb"
+                                            alt="Screen Shot 2020-05-18 at 8 49 52 PM" 
+                                            src="https://user-images.githubusercontent.com/52330544/82283636-cbdbd480-994b-11ea-9878-3458db101866.png">
+                                        <div>
+                                            <img class="icon" src="images/react.png" alt="react">
+                                            <img class="icon" src="images/nodejsbig.png" alt="nodejs">
+                                            <img class="icon" src="images/awss3.png" alt="awss3">
+                                            <img class="icon" src="images/psql.png" alt="psql">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer></footer>
+        </div>
+        <script>
+            document.getElementById("about-link").addEventListener("click", function() {
+                let about = document.getElementById("about");
+                if (about.style.display == "none") {
+                    about.style.display = "flex";
+                } else {
+                    about.style.display = "none";
+                }
+            })
+            document.getElementById("proj-link").addEventListener("click", function() {
+                let projects = document.getElementById("projects-wrap");
+                if (projects.style.display == "none") {
+                    projects.style.display = "flex";
+                } else {
+                    projects.style.display = "none";
+                }
+            })
+            document.getElementById("cont-link").addEventListener("click", function() {
+                let contact = document.getElementById("contact");
+                if (contact.style.display == "none") {
+                    contact.style.display = "flex";
+                } else {
+                    contact.style.display = "none";
+                }
+            })
+        </script>
+    </body>
+</html>
