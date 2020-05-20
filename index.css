@@ -46,12 +46,13 @@ header {
 }
 
 nav {
-    width: 65%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: solid 1px rgb(5, 38, 58);
     font-family: 'Overpass', serif;
+    padding: 5px 0;
 }
 
 .nav-wrap {
@@ -71,7 +72,7 @@ nav {
 
 main {
     padding:  100px 40px 10px;
-    max-width: 60%;
+    max-width: 55%;
     margin: 0 auto;
     font-family: 'Overpass', sans-serif;
 }
@@ -103,12 +104,7 @@ main {
     margin: 80px 0 20px;
 }
 
-.t1 {
-    height: 100%;
-    width: 100%;
-}
-
-.t2 {
+.thumb {
     height: 100%;
     width: 100%;
 }
@@ -124,14 +120,14 @@ main {
 }
 
 .projects p {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .text {
     text-align: left;
 }
 
-.p1 {
+.p1, .p2 {
     margin-bottom: 40px;
 }
 
@@ -143,6 +139,7 @@ main {
 
 .dr a {
     color: #106bc3;
+    font-size: 22px;
 }
 
 .dr a:hover {
@@ -245,14 +242,19 @@ footer {
 
 /* Media Queries */
 
-@media(max-width: 825px) {
+@media(max-width: 850px) {
     
     nav {
         flex-direction: column;
+        width: 70%
     }
 
     h1 {
         font-size: 26px;
+    }
+
+    main {
+        width: 65%;
     }
 
     .nav-wrap li {
@@ -290,8 +292,10 @@ footer {
 }
 
 @media (max-width: 500px) {
+
     main {
-        padding-top: 70px;
+        padding-top: 80px;
+        width: 65%;
     }
 
     h1 {
