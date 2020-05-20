@@ -255,6 +255,7 @@ footer {
 
     main {
         max-width: 80%;
+        padding-top: 100px;
     }
 
     .nav-wrap li {
