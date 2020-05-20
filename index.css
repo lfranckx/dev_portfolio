@@ -6,14 +6,14 @@
 body {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Oswald', sans-serif;
     text-align: center;
+    background-color: #fbfbfa;
 }
 
 h1 {
     margin: 0;
-    font-size: 28px;
-    color: white;
+    font-size: 30px;
+    color: rgb(5, 38, 58);
 }
 
 h2 {
@@ -25,17 +25,28 @@ p {
     margin: 0;
 }
 
+a {
+    font-size: 18px;
+}
+
 header {
-    background-color: rgb(5, 38, 58);
+    display: flex;
+    justify-content: center;
     position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #fbfbfa;
     width: 100%;
+    text-align: center;
 }
 
 nav {
+    width: 65%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 70px;
+    border-bottom: solid 1px rgb(5, 38, 58);
+    font-family: 'Overpass', serif;
 }
 
 .nav-wrap {
@@ -44,15 +55,20 @@ nav {
 
 .nav-wrap li {
     margin: 0 10px;
-    font-size: 20px;
-    color: white;
+    font-size: 22px;
+    color: rgb(5, 38, 58);
     cursor: pointer;
 }
 
+.nav-wrap li:hover {
+    text-decoration: underline;
+}
+
 main {
-    padding:  100px 40px 40px;
-    max-width: 920px;
+    padding:  100px 40px 10px;
+    max-width: 60%;
     margin: 0 auto;
+    font-family: 'Overpass', sans-serif;
 }
 
 .about {
@@ -73,9 +89,13 @@ main {
     border-radius: 3px;
 }
 
+.about a:hover {
+    background-color: rgb(11, 57, 87);
+}
+
 /* Projects */
 #projects {
-    margin-top: 80px
+    margin: 80px 0 20px;
 }
 
 .t1 {
@@ -84,13 +104,18 @@ main {
 }
 
 .t2 {
-    height: 550px;
-    width: 605px;
+    height: 100%;
+    width: 100%;
 }
 
 .icon {
     height: 45px;
     width: 45px;
+    margin: 0 5px;
+}
+
+.node {
+    width: 55px;
 }
 
 .projects p {
@@ -103,4 +128,54 @@ main {
 
 .p1 {
     margin-bottom: 40px;
+}
+
+.p-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dr a {
+    color: #106bc3;
+}
+
+.dr a:hover {
+    color: #3695f1;
+}
+
+/* Contact */
+
+footer {
+    padding: 20px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-wrap {
+    display: flex;
+}
+
+.icons {
+    cursor: pointer;
+    margin: 0 40px;
+}
+
+#gmail {
+    height: 42px;
+    width: 50px;
+}
+
+#linkedin {
+    height: 45px;
+    width: 50px;
+    position: relative;
+    bottom: 1px;
+}
+
+#github {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    bottom: 4px;
 }

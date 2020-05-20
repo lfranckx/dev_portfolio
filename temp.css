@@ -1,15 +1,28 @@
 * {
     text-decoration: none;
     list-style: none;
+    color: rgb(5, 38, 58);
 }
 
 body {
     margin: 0;
+    display: block
 }
 
 .wrapper {
     height: 100%;
-    /* background-color: #FDFFFC; */
+}
+
+.hide1 {
+    display: none !important; 
+}
+
+.hide2 {
+    display: none !important; 
+}
+
+.hide3 {
+    display: none !important; 
 }
 
 section {
@@ -23,17 +36,7 @@ header {
 
 p {
     margin: 0;
-    color: #27374c;
     font-size: 18px;
-}
-
-a {
-    color: #27374c;
-}
-
-button {
-    background: white;
-    border: none;
 }
 
 .nav {
@@ -51,6 +54,8 @@ button {
 ul, li {
     margin: 0;
     padding: 0;
+    font-size: 22px;
+    cursor: pointer;
 }
 
 ul {
@@ -59,12 +64,7 @@ ul {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-.nav-link {
-    font-size: 22px;
-
+    padding-inline-start: 25px;
 }
 
 .nav-list li:not(:last-child) {
@@ -113,13 +113,18 @@ ul {
     display: flex;
     justify-content: center;
     flex: 1 1 100%;
+    margin-bottom: 40px;
 }
 
 .card {
     margin: 1em 1em 4em 1em;
-    max-width: 800px;
+    max-width: 700px;
     -webkit-box-orient: vertical;
-    border: 1px solid #eee;
+}
+
+.p2 {
+    position: relative;
+    top: 100px;
 }
 
 .icon {
@@ -130,5 +135,48 @@ ul {
 .thumb {
     height: 100%;
     width: 100%;
-    margin-top: 20px;
+    position: relative;
+    top: 50%;
+}
+
+.text {
+    margin-bottom: 20px;
+}
+
+@media(max-width: 800px) {
+    header {
+        display: none;
+    }
+    section {
+        flex-direction: column;
+        height: calc(100vh - 75px);
+    }
+
+    .nav {
+        display: flex;
+        flex: 0 0 75px;
+        margin: 0 5% 0 5%;
+        border-bottom: 1px solid #8c99a3;
+    }
+
+    .nav-list {
+        flex: 1 0 100%;
+        display: flex;
+    }
+
+    .nav-list li {
+        flex: 1 0 auto;
+        align-self: flex-end;
+    }
+
+    .nav-list li:not(:last-child) {
+        margin-bottom: 0;
+    }
+}
+
+@media(max-width: 700px) {
+    .p2 {
+        position: relative;
+        top: 160px;
+    }
 }

@@ -5,7 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="temp.css">
+
     </head>
     <body>
         <div class='wrapper'>
@@ -14,29 +15,26 @@
                 <div class='nav'>
                     <div class="nav-wrap">
                         <ul class="nav-list">
-                            <li><button id="about-link" class="nav-link" href="">Lachlan Franckx</button></li>
-                            <li><button id="proj-link" class="nav-link" href="">Portfolio</button></li>
-                            <li><button id="cont-link" class="nav-link" href="">Contact</button></li>
+                            <li show="about">Lachlan Franckx</li>
+                            <li show="projects-wrap">Portfolio</li>
+                            <li show="contact">Contact</li>
                         </ul>
                     </div>
                 </div>
                 <div class="main-content align-center">
                     <div class="content-wrap">
-                        <div id="about" class="about flex-col"
-                            style="display: none;" >
-                            <p>I am a full-stack React and Node.js developer.  I am a 
-                                passionate creative type with a background in music and music 
-                                technology.  I take pride in overcoming challenges and having the 
-                                self-discipline to learn something entirely new and difficult. 
-                                Outside of coding I love being outdoors, surfing, climbing, and 
-                                visiting new places. I am seeking the opportunity to be around 
-                                experienced developers in order to grow myself and be a part of a 
-                                product I fully believe in.  Feel free to contact me or browse some 
-                                of my projects.</p>
+                        <div id="about" class="about flex-col hide1">
+                            <p>
+                                I am a full-stack React and Node.js developer. &nbsp;&nbsp;
+                                I am a passionate creative type with a background in music and music technology.&nbsp;&nbsp; 
+                                I take pride in in having self-discipline to overcome difficult challenges.&nbsp;&nbsp;
+                                Outside of coding I love being outdoors, surfing, climbing, and visiting new places.&nbsp;&nbsp;
+                                I am seeking the opportunity to be around experienced developers in order to grow and be a part of a product I fully believe in.&nbsp;&nbsp;
+                                Feel free to contact me or browse my projects.
+                            </p>
                         </div>
-                        <div id="contact" class="contact"style="display: none;" ></div>
-                        <div id="projects-wrap" class="projects-wrap"
-                            style="display: none;" >
+                        <div id="contact" class="contact hide2"></div>
+                        <div id="projects-wrap hide3" class="projects-wrap">
                             <div class="projects">
                                 <div class="p1 project">
                                     <div class="card">
@@ -49,19 +47,34 @@
                                             <img class="icon" src="images/awss3.png" alt="awss3">
                                             <img class="icon" src="images/psql.png" alt="psql">
                                         </div>
+                                        <p class="text">
+                                            Travel blogging platform based around the idea of traveling as a lifestyle
+                                            rather than a commodity. I was inspired by the book Vagabonding, which 
+                                            teaches the art of traveling for life. Built with React and Node.js using 
+                                            Multer to communicate with AWS-S3 Buckets to store images. Users can create 
+                                            profiles, post articles, and leave comments. 
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="p2 project">
                                     <div class="card">
-                                        <img class="thumb"
-                                            alt="Screen Shot 2020-05-18 at 8 49 52 PM" 
-                                            src="https://user-images.githubusercontent.com/52330544/82283636-cbdbd480-994b-11ea-9878-3458db101866.png">
+                                        <div>
+                                            <img class="thumb"
+                                                alt="Screen Shot 2020-05-18 at 8 49 52 PM" 
+                                                src="https://user-images.githubusercontent.com/52330544/82283636-cbdbd480-994b-11ea-9878-3458db101866.png">
+                                        </div>
                                         <div>
                                             <img class="icon" src="images/react.png" alt="react">
                                             <img class="icon" src="images/nodejsbig.png" alt="nodejs">
                                             <img class="icon" src="images/awss3.png" alt="awss3">
                                             <img class="icon" src="images/psql.png" alt="psql">
                                         </div>
+                                        <p class="text">
+                                            Tinder with a humorous twist. This app is for the parent who loves to take 
+                                            photos of their baby to share on social media.  Users are able to upload 
+                                            a picture of their baby and let the rest of the world rate it.  This app is
+                                            also built with React, Node.js, and an AWS-S3 bucket. 
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -71,31 +84,7 @@
             </section>
             <footer></footer>
         </div>
-        <script>
-            document.getElementById("about-link").addEventListener("click", function() {
-                let about = document.getElementById("about");
-                if (about.style.display == "none") {
-                    about.style.display = "flex";
-                } else {
-                    about.style.display = "none";
-                }
-            })
-            document.getElementById("proj-link").addEventListener("click", function() {
-                let projects = document.getElementById("projects-wrap");
-                if (projects.style.display == "none") {
-                    projects.style.display = "flex";
-                } else {
-                    projects.style.display = "none";
-                }
-            })
-            document.getElementById("cont-link").addEventListener("click", function() {
-                let contact = document.getElementById("contact");
-                if (contact.style.display == "none") {
-                    contact.style.display = "flex";
-                } else {
-                    contact.style.display = "none";
-                }
-            })
-        </script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="temp.js"></script>
     </body>
 </html>

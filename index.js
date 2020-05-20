@@ -16,4 +16,4 @@ function dropMenuJump() {
 
 dropMenuJump();
 jumpPage();
-// openNewTab();
+openNewTab();
