@@ -246,7 +246,7 @@ footer {
     
     nav {
         flex-direction: column;
-        width: 70%
+        width: 85%
     }
 
     h1 {
@@ -254,7 +254,7 @@ footer {
     }
 
     main {
-        width: 65%;
+        max-width: 80%;
     }
 
     .nav-wrap li {
@@ -292,10 +292,13 @@ footer {
 }
 
 @media (max-width: 500px) {
+    nav {
+        width: 95%;
+    }
 
     main {
         padding-top: 80px;
-        width: 65%;
+        max-width: 95%;
     }
 
     h1 {
