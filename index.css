@@ -29,6 +29,11 @@ a {
     font-size: 18px;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -85,7 +90,7 @@ main {
     background-color: rgb(15, 74, 113);
     color: white;
     font-size: 22px;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 3px;
 }
 
@@ -178,4 +183,191 @@ footer {
     width: 50px;
     position: relative;
     bottom: 4px;
+}
+
+/* HAMBURGER */
+:root {
+    --primary-color: rgba(13, 110, 139, 0.75);
+    --overlay-color: rgba(24, 39, 51 , 0.85);
+    --menu-speed: 0.75s;
+}
+
+.menu-wrap {
+    z-index: 1;
+}
+
+.menu-wrap .toggler {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+.menu-wrap .hamburger {
+    z-index: 1;
+    width: 40px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Hamburger Line */
+.menu-wrap .hamburger > div {
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 3px;
+    background:  #27374c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+/* Hamburger Lines - Top & Bottom */
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 3px;
+    background: inherit;
+}
+/* Moves Line Down */
+.menu-wrap .hamburger > div::after {
+    top: 10px;
+}
+
+/* Media Queries */
+
+@media(max-width: 825px) {
+    
+    nav {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .nav-wrap li {
+        font-size: 20px;
+        margin: 0 15px;
+    }
+    
+    .about p {
+        font-size: 20px;
+    }
+
+    .about a {
+        font-size: 18px;
+    }
+
+    .icon {
+        height: 30px;
+        width: 30px;
+    }
+
+    #gmail {
+        height: 34px;
+        width: 40px;
+    }
+    
+    #linkedin {
+        height: 36px;
+        width: 40px;
+    }
+    
+    #github {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        padding-top: 70px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .nav-wrap li {
+        font-size: 16px;
+        margin: 0 15px;
+    }
+    
+    .about  p {
+        font-size: 16px;
+    }
+
+    .about a {
+        font-size: 14px;
+    }
+
+    .projects p {
+        font-size: 16px;
+    }
+
+    .dr a {
+        font-size: 16px;
+    }
+
+    .icon {
+        height: 20px;
+        width: 20px;
+        margin: 0 2px;
+    }
+
+    .icons {
+        margin: 0 10px;
+    }
+
+    #gmail {
+        height: 30px;
+        width: 35px;
+    }
+    
+    #linkedin {
+        height: 32px;
+        width: 35px;
+        left: 4px;
+    }
+    
+    #github {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .about  p {
+        font-size: 15px;
+    }
+
+    .about a {
+        font-size: 12px;
+    }
+    
+    .projects p {
+        font-size: 15px;;
+    }
+
+    .dr a {
+        font-size: 15px;
+    }
+
+    .p-wrap {
+        flex-direction: column;
+    }
 }
