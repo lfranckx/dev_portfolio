@@ -152,15 +152,11 @@ footer {
     padding: 20px 0 0;
     display: flex;
     justify-content: center;
-}
-
-.contact-wrap {
-    display: flex;
+    justify-content: space-around;
 }
 
 .icons {
     cursor: pointer;
-    margin: 0 40px;
 }
 
 #gmail {
